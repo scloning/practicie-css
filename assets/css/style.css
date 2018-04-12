@@ -7,27 +7,120 @@
  * - Base
  * - Header
  * - Article
- * - Footer (Need to write/design)
+ * - Footer 
  */
+ 
+ /****** BEST VIEWED IN BROWSER AT ZOOM 75% ******/
  
 /*==================
  BASE STYLES
 ==================*/
  
-
+body {
+ 	margin-top: 25px;
+ 	}
+	
+h1, h2, h3, h4 {
+ 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ 	}
  
+p.text {
+ 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ 	font-size: 16px;
+ 	line-height: 1.5;
+ 	}
+
 /*==================
  HEADER
 ==================*/
 
+img#logo {
+	position: absolute;
+	}
 
+header {
+	position: relative;
+	}
 
+h1 {
+	margin-left: 65px;
+	}   
+
+header > p {
+	padding-top: 25px; padding-bottom: 5px;
+	}
+	
 /*==================
  ARTICLE
 ==================*/
 
+article > p::first-letter {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 40px;
+	font-weight: bold;
+	}
 
+h3 {
+	padding-top: 10px;
+	}
+
+p.indent {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left: 35px;
+	}
+
+p#pull-quote {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	text-indent: 70px;
+	padding: 15px;
+	} 
+
+	p#pull-quote::before {
+		content: open-quote;
+		font-size: 40px;
+		}
+
+	p#pull-quote::after {
+		content: close-quote;
+		font-size: 40px;
+		}
+
+section#one p {
+	line-height: 1.8;
+	}
+
+section#two {
+	position: relative;
+	 margin-top: 35px; margin-left: 380px;
+	}
+
+p#first-p {
+	padding-bottom: 25px;
+	}
+
+p#second-p {
+	padding-bottom: -5px;
+	}
 
 /*==================
  FOOTER
 ==================*/
+
+img#big-pic {
+	position: absolute;
+	padding-top: 30px;
+	margin-left: 15px;
+	}
+
+footer {
+	position: relative;
+	margin-left: 380px;
+	padding-top: 5px; padding-bottom: 20px;
+	}
+
+h4 {
+	font-style: italic;
+	padding-bottom: 20px;
+	}
+	
